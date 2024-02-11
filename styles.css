@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(0, 221, 255, 0.059);
+}
+
+h1 {
+    text-align: center;
+    display: inline-block;
+    margin: 10px 100px 10px 540px;
+}
+
+canvas {
+    border: 10px solid;
+}
+
+button {
+    display: inline-block;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#points {
+    font-size: 30px;
+    display: inline-block;
+}
+
+/* #play-area {
+    border: 10px solid black;
+
+} */
+
+/* #box-area {
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+    border: 5px dashed blue;
+} */
