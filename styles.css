@@ -1,11 +1,15 @@
-body {
-    background-color: rgba(0, 221, 255, 0.059);
-}
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
-h1 {
+body {
+    background: linear-gradient(105deg,
+            rgb(253, 250, 73, 0.8),
+            rgba(161, 39, 12, 0.8));
+    background-size: cover;
+    color: #1d1d1d;
+    background-color: rgba(0, 221, 255, 0.059);
     text-align: center;
-    display: inline-block;
-    margin: 10px 100px 10px 540px;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
 }
 
 canvas {
@@ -13,16 +17,18 @@ canvas {
 }
 
 button {
+    font-family: inherit;
     display: inline-block;
     padding: 20px;
     border-radius: 4px;
     margin-top: 0px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 
-#points {
+#score {
     font-size: 30px;
-    display: inline-block;
+    margin-bottom: 30px;
+    /* display: inline-block; */
 }
 
 /* #play-area {

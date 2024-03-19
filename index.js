@@ -1,14 +1,14 @@
 const canvas = document.getElementById("play-area");
 const ctx = canvas.getContext("2d");
-canvas.width = 1300;
-canvas.height = 590;
+canvas.width = 1000;
+canvas.height = 440;
 let activeKey = 0;
 let points = 0;
 start = true;
 changePos = false;
 
 function pointCalculator() {
-    document.getElementById("points").innerHTML = "Points: " + points;
+    document.getElementById("score").innerHTML = "Score: " + points;
 };
 function resetPage() {
     location.reload();
@@ -65,17 +65,17 @@ function renderCanvas() {                                       //to render the 
 };
 
 function renderBox() {                                       //to render the rectangle
-    // for (let i = 0; i < 6; i++) {
-    //     for (let j = 0; j < 6; j++) {
-    //         ctx.fillStyle = `rgb(
-    //       ${Math.floor(255 - 55 * i)}
-    //       ${Math.floor(255 - 55 * j)}
-    //       0)`;
-    //         ctx.fillRect(j * 25 + box.x, i * 25 + box.y, 25, 25);
-    //     }
-    // }
-    ctx.fillStyle = "brown";
-    ctx.fillRect(box.x, box.y, box.height, box.width);
+    for (let i = 0; i < 6; i++) {
+        for (let j = 0; j < 6; j++) {
+            ctx.fillStyle = `rgb(
+          ${Math.floor(255 - 55 * i)}
+          ${Math.floor(255 - 55 * j)}
+          0)`;
+            ctx.fillRect(j * 25 + box.x, i * 25 + box.y, 25, 25);
+        }
+    }
+    // ctx.fillStyle = "brown";
+    // ctx.fillRect(box.x, box.y, box.height, box.width);
 };
 
 function renderCoins() {                                        //to render coin on canvas
