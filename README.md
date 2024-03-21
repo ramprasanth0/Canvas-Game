@@ -15,7 +15,7 @@ Use the arrow keys to control the box and collect coins.
 Clone the project
 
 ```bash
-  git clone https://github.com/ramprasanth0/Mini-Game.git
+  git clone https://github.com/ramprasanth0/Canvas-Game.git
 ```
 
  Open the index.html file in your web browser.
